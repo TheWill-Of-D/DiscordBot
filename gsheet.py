@@ -7,7 +7,7 @@ SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
 
 
 
-creds_json = json.loads(os.getenv("google-json-key"))
+creds_json = json.loads(os.environ['google-json-key'])
 gc = gspread.service_account_from_dict(creds_json)
 sh = gc.open_by_url('https://docs.google.com/spreadsheets/d/1CYLIwfrZLWoN_6E3a4RyI1K2h5qToKzao5OlKgKO1k0/edit?usp=drivesdk')
 worksheet = sh.get_worksheet(0)
