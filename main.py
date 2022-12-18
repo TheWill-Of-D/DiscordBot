@@ -113,9 +113,9 @@ async def on_message(message):
 
 while __name__ == '__main__':
   try:
-      keep_alive()
+#      keep_alive()
       bot.run(DISCORD_TOKEN)
   except discord.errors.HTTPException as f:
       print(f)
       print("\n\n\nBLOCKED BY RATE LIMITS\nRESTARTING NOW\n\n\n")
-      os.system('kill 1')
+#      os.system('kill 1')
