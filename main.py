@@ -1,7 +1,7 @@
 import os, discord
 from discord.ext import commands
 from gsheet import get_group_gsheet
-from keep_alive import keep_alive
+#from keep_alive import keep_alive (Optional, for deployment using flask)
 import asyncio
 
 
